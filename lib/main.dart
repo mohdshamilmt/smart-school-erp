@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:school_erp_project/screen/main_screen.dart';
+
 
 void main() {
   runApp(const SchoolERPApp());
@@ -12,14 +14,7 @@ class SchoolERPApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'School ERP',
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'School ERP Web App',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
-      ),
-    );
+      home:  const MainDashboard(),
+     );
   }
 }
